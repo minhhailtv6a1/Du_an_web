@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  /* border: solid 2px black; */
+  background-color: #fff9de;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/* Cam kết ...... */
+#header > div {
+  display: inline-block;
+}
+
+/* Div chứa 4 phần phải */
+#header > div + div {
+  float: right;
+  /* border: solid 2px black; */
+  /* background-color: yellow; */
+}
+
+/* 4 phần phải */
+#header > div + div div {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+#topmenu {
+  background-color: #0f1b07;
+  color: white;
+  font-size: 15px;
+}
+
+#logo_web {
+  /* margin: 10px 0px 0px 40px; */
+  vertical-align: middle;
+  margin: 0px 70px 0px 70px;
+  width: 80px;
+  display: inline-block;
+}
+
+/* Chứa tất cả trong top menu */
+#topmenu div {
+  display: inline-block;
+  /* margin: 20px; */
+}
+
+/* Chứa các chức năng: Trang chủ,...... thương hiệu */
+#left_topmenu div + div {
+  margin: 30px;
+}
+
+/* Chứa thanh tìm kiếm và 2 logo */
+#right_topmenu {
+  float: right;
+  /* vertical-align: middle; */
+  margin: 20px 50px 10px 20px;
+}
+
+#home_find {
+  background-color: #f3f5f9;
+  color: black;
+  padding: 10px 100px 10px 20px;
+  border-radius: 999px;
+  margin-right: 30px;
+  /* margin-left: 1000px; */
+}
+
+#logo_user,
+#shopping-cart {
+  width: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#content img {
+  width: 100%;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#giaybongda {
+  position: relative;
+  display: inline-block;
+}
+
+.menu li {
+  color: #ddd;
+  padding: 0px 0px;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+
+.menu ul:hover {
+  background-color: #ddd;
+}
+
+#giaybongda:hover .menu {
+  display: block;
+  background-color: #0f1b07;
+}
+#giaybongda div:hover {
+  color: #0f1b07;
+  background-color: #fff;
+}
